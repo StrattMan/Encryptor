@@ -10,9 +10,10 @@ console.log(`They chose: ${message}`);
 
 
 function letterChange() {
-    message.replace(message.charAt(0));
+    //dude
+    message.replace(message.charAt(3));
     message.replace(message.charAt(1));
-    message.replace(message.charAt(2));
+    message.replace(message.charAt(5));
 }
             
             
