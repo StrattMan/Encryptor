@@ -56,13 +56,14 @@ function loopString(stringToLoop) {
         // find the index of the letter in the alphabet array
         let alphaIndex = alphabet.indexOf(l.toLowerCase());
 
-        // TODO figure out what happens if they get past z
+        
+        // TODO make the encrypt number something the user can choose
         encryptNumber = 3;
 
         // if it's found add to the newMessage
         if (alphaIndex !== -1) {
             if((alphaIndex + 1 + encryptNumber) > alphabet.length){
-                alphaIndex = alphabet.length - alphaIndex - 1; 
+                alphaIndex = alphabet.length - alphaIndex - encryptNumber - 1; 
             }
             newMessage += alphabet[alphaIndex + encryptNumber];
             // if not if add a what it found
