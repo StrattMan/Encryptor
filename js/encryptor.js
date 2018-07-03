@@ -13,5 +13,5 @@ function letterChange() {
     message.replace(message.charAt(2));
 }
             
-            
+let stratton = 'awesome';
             
