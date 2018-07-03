@@ -62,7 +62,7 @@ function loopString(stringToLoop) {
         // if it's found add to the newMessage
         if (alphaIndex !== -1) {
             if((alphaIndex + 1 + encryptNumber) > alphabet.length){
-                alphaIndex = 0; 
+                alphaIndex = alphabet.length - alphaIndex - 1; 
             }
             newMessage += alphabet[alphaIndex + encryptNumber];
             // if not if add a what it found
