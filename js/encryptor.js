@@ -62,7 +62,7 @@ function loopString(stringToLoop) {
         encryptNumber = 3;
 
         // if it's found add to the newMessage
-        if (alphaIndex) {
+        if (alphaIndex !== -1) {
             if(alphaIndex > alphabet.length + 1){
                 alphaIndex = 0; 
             }
