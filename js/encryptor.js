@@ -7,7 +7,7 @@ console.log(`At index 1: ${message.charAt(0)}`);
 
 console.log(`They chose: ${message}`);
 
-var stratton = "stratton";
+
 
 function letterChange() {
     message.replace(message.charAt(0));
