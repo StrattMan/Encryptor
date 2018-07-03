@@ -1,5 +1,6 @@
 //TODO figure out how to make the message something that the user puts into the input box.
 let message = "Lincoln, Quincy, and Stratton gave McCloud a hug. yey!";
+let userMessageInput = document.getElementById("messageInput");
 let newMessage = '';
 let stringArray = []; // new array to loop that keeps the spaces
 let outputDiv = document.getElementById("output");
@@ -13,7 +14,14 @@ console.log(`At index 1: ${message.charAt(0)}`);
 console.log(`They chose: ${message}`);
 
 
+function getMessage() {
+        message = userMessageInput.value;
+}
+
 function encrypt() {
+
+    // get message from UI
+    getMessage();
 
     // loop over all letters in the message
 
