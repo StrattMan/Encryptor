@@ -27,8 +27,6 @@ function encrypt() {
         }
     });
 
-    debugger;
-
     stringArray.forEach((word) => {
         if (word !== " ") {
             loopString(word);
@@ -63,7 +61,7 @@ function loopString(stringToLoop) {
 
         // if it's found add to the newMessage
         if (alphaIndex !== -1) {
-            if(alphaIndex > alphabet.length + 1){
+            if((alphaIndex + encryptNumber) > alphabet.length + 1){
                 alphaIndex = 0; 
             }
             newMessage += alphabet[alphaIndex + encryptNumber];
