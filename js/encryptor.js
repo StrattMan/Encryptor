@@ -1,3 +1,4 @@
+//TODO figure out how to make the message something that the user puts into the input box.
 let message = "Lincoln, Quincy, and Stratton gave McCloud a hug. yey!";
 let newMessage = '';
 let stringArray = []; // new array to loop that keeps the spaces
@@ -75,4 +76,3 @@ function loopString(stringToLoop) {
 
 
 let stratton = 'awesome';
-            
