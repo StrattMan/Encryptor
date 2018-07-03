@@ -1,4 +1,4 @@
-//TODO figure out how to make the message something that the user puts into the input box.
+
 let message = "Lincoln, Quincy, and Stratton gave McCloud a hug. yey!";
 let userMessageInput = document.getElementById("messageInput");
 let newMessage = '';
