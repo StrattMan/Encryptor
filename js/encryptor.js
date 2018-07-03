@@ -16,6 +16,7 @@ console.log(`They chose: ${message}`);
 
 function getMessage() {
         message = userMessageInput.value;
+        newMessage = ''; 
 }
 
 function encrypt() {
