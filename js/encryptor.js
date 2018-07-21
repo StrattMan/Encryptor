@@ -5,6 +5,8 @@ let newMessage = '';
 let stringArray = []; // new array to loop that keeps the spaces
 let outputDiv = document.getElementById("output");
 let encryptNumber; // the number of letter up from the current index
+let numberChosen = prompt("what number would you like to encrypt by?"); 
+
 
 let alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n",
     "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
@@ -13,6 +15,9 @@ console.log(`At index 1: ${message.charAt(0)}`);
 
 console.log(`They chose: ${message}`);
 
+function chooseNumber(){
+    let numberChosen = ''; 
+}
 
 function getMessage() {
         message = userMessageInput.value;
@@ -58,7 +63,7 @@ function encrypt() {
 
 }
 
-// TODO this is not keeping special characters like it should.  i.e. ",", "!", etc..
+
 function loopString(stringToLoop) {
 
     stringToLoop.split('').forEach(l => {
@@ -67,8 +72,8 @@ function loopString(stringToLoop) {
         let alphaIndex = alphabet.indexOf(l.toLowerCase());
 
         
-        // TODO make the encrypt number something the user can choose
-        encryptNumber = 3;
+        
+        encryptNumber = parseInt(numberChosen); 
 
         // if it's found add to the newMessage
         if (alphaIndex !== -1) {
